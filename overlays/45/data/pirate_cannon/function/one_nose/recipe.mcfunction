@@ -12,30 +12,33 @@ execute \
         half=bottom, \
         shape=straight, \
         waterlogged=false] \
-    unless entity @e[tag=one_nose_pirate_cannon_main, distance=..3.6] \
+    unless entity @e[ \
+        type=minecraft:armor_stand, \
+        tag=one_nose_pirate_cannon_main, \
+        distance=..3.6] \
     run tag @s add one_nose_pirate_cannon_make
 
-execute at @e[tag=one_nose_pirate_cannon_make] \
+execute at @e[type=minecraft:item, tag=one_nose_pirate_cannon_make] \
     run kill @n[ \
         type=minecraft:item, \
         nbt={ Item: { id: "minecraft:iron_block", count: 1 } }, \
         distance=..1]
 
-execute at @e[tag=one_nose_pirate_cannon_make] \
+execute at @e[type=minecraft:item, tag=one_nose_pirate_cannon_make] \
     positioned ~ ~-0.3 ~ align xyz \
     if block ~ ~ ~ #minecraft:stairs[facing=north] \
     run function pirate_cannon:one_nose/make_north
-execute at @e[tag=one_nose_pirate_cannon_make] \
+execute at @e[type=minecraft:item, tag=one_nose_pirate_cannon_make] \
     positioned ~ ~-0.3 ~ align xyz \
     if block ~ ~ ~ #minecraft:stairs[facing=south] \
     run function pirate_cannon:one_nose/make_south
-execute at @e[tag=one_nose_pirate_cannon_make] \
+execute at @e[type=minecraft:item, tag=one_nose_pirate_cannon_make] \
     positioned ~ ~-0.3 ~ align xyz \
     if block ~ ~ ~ #minecraft:stairs[facing=east] \
     run function pirate_cannon:one_nose/make_east
-execute at @e[tag=one_nose_pirate_cannon_make] \
+execute at @e[type=minecraft:item, tag=one_nose_pirate_cannon_make] \
     positioned ~ ~-0.3 ~ align xyz \
     if block ~ ~ ~ #minecraft:stairs[facing=west] \
     run function pirate_cannon:one_nose/make_west
 
-kill @e[tag=one_nose_pirate_cannon_make]
+kill @e[type=minecraft:item, tag=one_nose_pirate_cannon_make]
