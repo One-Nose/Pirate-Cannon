@@ -20,6 +20,15 @@
           }
         },
         {
+          "directory": "overlays/air_tag",
+          "min_format": 43,
+          "max_format": 44,
+          "formats": {
+            "min_inclusive": 43,
+            "max_inclusive": 44
+          }
+        },
+        {
           "directory": "overlays/45",
           "min_format": 45,
           "max_format": 62,

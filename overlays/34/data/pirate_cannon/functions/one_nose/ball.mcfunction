@@ -9,12 +9,12 @@ execute \
         nbt={ OnGround: 0b }] \
     at @s \
     positioned ~ ~0.5 ~ \
-    if block ~-0.2 ~ ~ minecraft:air \
-    if block ~0.2 ~ ~ minecraft:air \
-    if block ~ ~0.2 ~ minecraft:air \
-    if block ~ ~-0.2 ~ minecraft:air \
-    if block ~ ~ ~0.2 minecraft:air \
-    if block ~ ~ ~-0.2 minecraft:air \
+    if block ~-0.2 ~ ~ #minecraft:air \
+    if block ~0.2 ~ ~ #minecraft:air \
+    if block ~ ~0.2 ~ #minecraft:air \
+    if block ~ ~-0.2 ~ #minecraft:air \
+    if block ~ ~ ~0.2 #minecraft:air \
+    if block ~ ~ ~-0.2 #minecraft:air \
     run tag @s add one_nose_pirate_cannon_air
 
 execute \
