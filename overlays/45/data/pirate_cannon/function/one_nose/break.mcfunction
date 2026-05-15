@@ -3,9 +3,9 @@ execute as @e[tag=one_nose_pirate_cannon_main] at @s \
     run tag @s add one_nose_pirate_cannon_broken
 
 execute at @e[tag=one_nose_pirate_cannon_broken] \
-    run kill @e[tag=one_nose_pirate_cannon_front, sort=nearest, limit=1]
+    run kill @n[tag=one_nose_pirate_cannon_front]
 execute at @e[tag=one_nose_pirate_cannon_broken] \
-    run kill @e[tag=one_nose_pirate_cannon, sort=nearest, limit=2]
+    run kill @n[tag=one_nose_pirate_cannon, limit=2]
 
 execute at @e[tag=one_nose_pirate_cannon_broken] \
     run summon minecraft:item ~ ~1 ~ { Item: { id: "minecraft:gunpowder" } }

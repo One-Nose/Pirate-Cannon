@@ -19,7 +19,7 @@ execute at @e[tag=one_nose_pirate_cannon_shooting] \
 
 execute at @e[tag=one_nose_pirate_cannon_shooting] \
     if block ~ ~1 ~ #minecraft:stairs[facing=north] \
-    at @e[tag=one_nose_pirate_cannon_front, limit=1, sort=nearest] \
+    at @n[tag=one_nose_pirate_cannon_front] \
     run summon minecraft:armor_stand ~ ~ ~ { \
         Motion: [ 0d, 0.9d, -4.5d ], \
         Small: 1b, \
@@ -35,7 +35,7 @@ execute at @e[tag=one_nose_pirate_cannon_shooting] \
 
 execute at @e[tag=one_nose_pirate_cannon_shooting] \
     if block ~ ~1 ~ #minecraft:stairs[facing=south] \
-    at @e[tag=one_nose_pirate_cannon_front, limit=1, sort=nearest] \
+    at @n[tag=one_nose_pirate_cannon_front] \
     run summon minecraft:armor_stand ~ ~ ~ { \
         Motion: [ 0d, 0.9d, 4.5d ], \
         Small: 1b, \
@@ -51,7 +51,7 @@ execute at @e[tag=one_nose_pirate_cannon_shooting] \
 
 execute at @e[tag=one_nose_pirate_cannon_shooting] \
     if block ~ ~1 ~ #minecraft:stairs[facing=east] \
-    at @e[tag=one_nose_pirate_cannon_front, limit=1, sort=nearest] \
+    at @n[tag=one_nose_pirate_cannon_front] \
     run summon minecraft:armor_stand ~ ~ ~ { \
         Motion: [ 4.5d, 0.9d, 0d ], \
         Small: 1b, \
@@ -67,7 +67,7 @@ execute at @e[tag=one_nose_pirate_cannon_shooting] \
 
 execute at @e[tag=one_nose_pirate_cannon_shooting] \
     if block ~ ~1 ~ #minecraft:stairs[facing=west] \
-    at @e[tag=one_nose_pirate_cannon_front, limit=1, sort=nearest] \
+    at @n[tag=one_nose_pirate_cannon_front] \
     run summon minecraft:armor_stand ~ ~ ~ { \
         Motion: [ -4.5d, 0.9d, 0d], \
         Small: 1b, \

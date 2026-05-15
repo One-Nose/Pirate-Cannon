@@ -16,11 +16,10 @@ execute \
     run tag @s add one_nose_pirate_cannon_make
 
 execute at @e[tag=one_nose_pirate_cannon_make] \
-    run kill @e[ \
+    run kill @n[ \
         type=minecraft:item, \
         nbt={ Item: { id: "minecraft:iron_block", count: 1 } }, \
-        distance=..1, \
-        limit=1]
+        distance=..1]
 
 execute at @e[tag=one_nose_pirate_cannon_make] \
     positioned ~ ~-0.3 ~ align xyz \
