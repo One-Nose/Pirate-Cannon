@@ -7,55 +7,55 @@
     "supported_formats": {
       "min_inclusive": 6,
       "max_inclusive": 101
-    },
-    "overlays": {
-      "entries": [
-        {
-          "directory": "overlays/33",
-          "min_format": 33,
-          "max_format": 44,
-          "formats": {
-            "min_inclusive": 33,
-            "max_inclusive": 44
-          }
-        },
-        {
-          "directory": "overlays/34",
-          "min_format": 34,
-          "max_format": 44,
-          "formats": {
-            "min_inclusive": 34,
-            "max_inclusive": 44
-          }
-        },
-        {
-          "directory": "overlays/air_tag",
-          "min_format": 43,
-          "max_format": 44,
-          "formats": {
-            "min_inclusive": 43,
-            "max_inclusive": 44
-          }
-        },
-        {
-          "directory": "overlays/45",
-          "min_format": 45,
-          "max_format": [101, 1],
-          "formats": {
-            "min_inclusive": 45,
-            "max_inclusive": 101
-          }
-        },
-        {
-          "directory": "overlays/63",
-          "min_format": 63,
-          "max_format": [101, 1],
-          "formats": {
-            "min_inclusive": 63,
-            "max_inclusive": 101
-          }
-        }
-      ]
     }
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "33",
+        "min_format": 33,
+        "max_format": 44,
+        "formats": {
+          "min_inclusive": 33,
+          "max_inclusive": 44
+        }
+      },
+      {
+        "directory": "34",
+        "min_format": 34,
+        "max_format": 44,
+        "formats": {
+          "min_inclusive": 34,
+          "max_inclusive": 44
+        }
+      },
+      {
+        "directory": "air_tag",
+        "min_format": 43,
+        "max_format": 44,
+        "formats": {
+          "min_inclusive": 43,
+          "max_inclusive": 44
+        }
+      },
+      {
+        "directory": "45",
+        "min_format": 45,
+        "max_format": [101, 1],
+        "formats": {
+          "min_inclusive": 45,
+          "max_inclusive": 101
+        }
+      },
+      {
+        "directory": "63",
+        "min_format": 63,
+        "max_format": [101, 1],
+        "formats": {
+          "min_inclusive": 63,
+          "max_inclusive": 101
+        }
+      }
+    ]
   }
 }
