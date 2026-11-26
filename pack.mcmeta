@@ -3,10 +3,10 @@
     "description": "This is a remake for Pirate Cannon 1.12 only one command by Cimap. It allows you to create cannons and blow up the world!",
     "pack_format": 12,
     "min_format": 6,
-    "max_format": [101, 1],
+    "max_format": [128, 1],
     "supported_formats": {
       "min_inclusive": 6,
-      "max_inclusive": 101
+      "max_inclusive": 128
     }
   },
   "overlays": {
@@ -41,28 +41,28 @@
       {
         "directory": "45",
         "min_format": 45,
-        "max_format": [101, 1],
+        "max_format": 999,
         "formats": {
           "min_inclusive": 45,
-          "max_inclusive": 101
+          "max_inclusive": 999
         }
       },
       {
         "directory": "63",
         "min_format": 63,
-        "max_format": [101, 1],
+        "max_format": 999,
         "formats": {
           "min_inclusive": 63,
-          "max_inclusive": 101
+          "max_inclusive": 999
         }
       },
       {
         "directory": "69",
         "min_format": 69,
-        "max_format": [101, 1],
+        "max_format": 999,
         "formats": {
           "min_inclusive": 69,
-          "max_inclusive": 101
+          "max_inclusive": 999
         }
       }
     ]
